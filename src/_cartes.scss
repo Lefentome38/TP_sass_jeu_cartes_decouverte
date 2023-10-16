@@ -1,8 +1,0 @@
-@use "variables" as *;
-@use "mixin" as *;
-
-.carte{
-    @include dimension(100px, 150px, $color-carte);
-    margin: 50px;
-    font-size: 80px;
-}

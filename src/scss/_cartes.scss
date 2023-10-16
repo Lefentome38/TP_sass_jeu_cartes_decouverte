@@ -1,0 +1,27 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+      width: 100px * $i;
+    }
+  }
+
+.carte{
+    @include dimension-color(100px, 150px, $color-carte);
+    margin: 50px;
+    transform: rotate($nunber+deg);
+    
+    .nbr_carte_tete{
+        @include carte-parametre(20px, start);
+    }
+    
+    .symbole_carte{    
+        @include carte-parametre(90px, center);
+    }
+    
+    .nbr_carte_pied{
+        @include carte-parametre(20px, end);
+    }
+}

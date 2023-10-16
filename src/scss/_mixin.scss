@@ -1,0 +1,10 @@
+@mixin dimension-color($width, $height, $backgroundColor) {
+    width: $width;
+    height: $height;
+    background-color: $backgroundColor;
+  }
+
+@mixin carte-parametre($font-size ,$text-align){
+  font-size: $font-size;
+  text-align: $text-align;
+}

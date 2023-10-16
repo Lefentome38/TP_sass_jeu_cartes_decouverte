@@ -1,0 +1,7 @@
+@use "sass:math";
+
+$color-base: #279527;
+$color-carte: #ffffff;
+$color-base-reduit: lighten($color-base,10%);
+
+$nunber: random($limit: 100)

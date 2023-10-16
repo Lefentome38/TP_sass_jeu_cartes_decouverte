@@ -1,13 +1,13 @@
-@use "variables" as *;
-@use "cartes" as *;
-@use "mixin" as *;
+@use "scss/variables" as *;
+@use "scss/cartes" as *;
+@use "scss/mixin" as *;
 
 body {
   background-color: $color-base;
 }
 
 .ZoneDeJeu{
-  @include dimension(800px, 600px, $color-base-reduit);
+  @include dimension-color(800px, 600px, $color-base-reduit);
   border: solid white;
   margin: auto;
   border-radius: 40px ;
