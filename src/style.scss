@@ -1,4 +1,5 @@
-$color-base: green;
+@import "cartes";
+$color-base: #279527;
 
 body {
   background-color: $color-base;
