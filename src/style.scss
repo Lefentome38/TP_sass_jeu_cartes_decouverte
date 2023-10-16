@@ -1,15 +1,14 @@
-@import "cartes";
-$color-base: #279527;
+@use "variables" as *;
+@use "cartes" as *;
+@use "mixin" as *;
 
 body {
   background-color: $color-base;
 }
 
 .ZoneDeJeu{
+  @include dimension(800px, 600px, $color-base-reduit);
   border: solid white;
   margin: auto;
-  width: 800px;
-  height: 600px;
   border-radius: 40px ;
-  background-color: lighten($color-base,10%);
 }

@@ -1,7 +1,8 @@
+@use "variables" as *;
+@use "mixin" as *;
+
 .carte{
-    width: 100px;
-    height: 150px;
+    @include dimension(100px, 150px, $color-carte);
     margin: 50px;
     font-size: 80px;
-    background-color: white;
 }
