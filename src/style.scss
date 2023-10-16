@@ -1,3 +1,14 @@
+$color-base: green;
+
 body {
-  background-color: green;
+  background-color: $color-base;
+}
+
+.ZoneDeJeu{
+  border: solid white;
+  margin: auto;
+  width: 800px;
+  height: 600px;
+  border-radius: 40px ;
+  background-color: lighten($color-base,10%);
 }
