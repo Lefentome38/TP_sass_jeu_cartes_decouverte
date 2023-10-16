@@ -7,8 +7,10 @@ body {
 }
 
 .ZoneDeJeu{
-  @include dimension-color(800px, 600px, $color-base-reduit);
+  @include dimension-ZoneDeJeu();
   border: solid white;
   margin: auto;
-  border-radius: 40px ;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }

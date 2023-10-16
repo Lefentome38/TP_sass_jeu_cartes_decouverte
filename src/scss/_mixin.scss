@@ -1,10 +1,31 @@
-@mixin dimension-color($width, $height, $backgroundColor) {
-    width: $width;
-    height: $height;
-    background-color: $backgroundColor;
-  }
+@use "variables" as *;
 
-@mixin carte-parametre($font-size ,$text-align){
-  font-size: $font-size;
-  text-align: $text-align;
+@mixin dimension-ZoneDeJeu() {
+  width: 800px;
+  height: 600px;
+  border-radius: 40px ;
+  background-color: $color-base-reduit;
+}
+
+@mixin dimension-carte() {
+  width: 100px;
+  height: 150px;
+  margin: 50px;
+  border: solid;
+  background-color: $color-carte;
+  transform: rotate($nunber+deg);
+  transform: rotate(0deg);
+}
+
+@mixin carte-parametre-tete(){
+  font-size: $nbr_carte_tete--font-size;
+  text-align: $nbr_carte_tete--text-align;
+}
+@mixin carte-parametre-centre(){
+  font-size: $symbole_carte_centre--font-size;
+  text-align: $symbole_carte_centre--text-align;
+}
+@mixin carte-parametre-pied(){
+  font-size: $nbr_carte_pied--font-size;
+  text-align: $nbr_carte_pied--text-align;
 }
