@@ -8,6 +8,8 @@ body {
 
 .ZoneDeJeu{
   @include dimension-ZoneDeJeu();
+  position: relative;
   border: solid white;
   margin: auto;
+  margin-top: 50px;
 }
