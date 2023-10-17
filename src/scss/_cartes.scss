@@ -4,10 +4,10 @@
 
 
 @for $i from 1 through $nombre-carte-sur-la-table {
-    .carte#{$i} {
+    .carte_carreau#{$i} {
 
         @include dimension-carte();
-        
+
         margin-top: 20px;
         margin-left: 70px * $i;
         transform: rotate($rotation-carte-1-de-depart - ($i * -10));
@@ -31,3 +31,25 @@
         }
     }
   }
+
+@for $i from 1 through $nombre-carte-sur-la-table {
+    .carte_trefle#{$i} {
+
+      @include dimension-carte();
+
+          margin-top: 40px * $i;
+        
+        .nbr_carte_tete{
+            @include carte-parametre(math.div($dimension-carte-height, 6), start);
+        }
+        
+        .symbole_carte_centre{    
+            @include carte-parametre(math.div($dimension-carte-height, 2), center);
+        }
+        
+        .nbr_carte_pied{
+            @include carte-parametre(math.div($dimension-carte-height, 6), start);
+            transform: rotate(180deg);
+        }
+    }
+}
