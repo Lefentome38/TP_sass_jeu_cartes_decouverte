@@ -3,5 +3,8 @@ $color-base-reduit: lighten($color-base,10%);
 
 $color-carte: #ffffff;
 
+$dimension-carte-width: 100px;
+$dimension-carte-height: 150px;
+
 @use "sass:math";
 $nunber: random($limit: 360)

@@ -8,14 +8,14 @@
 }
 
 @mixin dimension-carte() {
-  width: 100px;
-  height: 150px;
   margin: 50px;
   border: solid;
+  width: $dimension-carte-width;
+  height: $dimension-carte-height;
   background-color: $color-carte;
   transform: rotate($nunber+deg);
   transform: rotate(0deg);
-  }
+}
 
 @mixin carte-parametre($font-size ,$text-align){
   font-size: $font-size;

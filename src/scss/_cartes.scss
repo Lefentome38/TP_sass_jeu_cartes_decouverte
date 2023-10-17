@@ -1,6 +1,6 @@
 @use "variables" as *;
 @use "mixin" as *;
-
+@use "sass:math";
 
 
 @for $i from 1 through 6 {
@@ -12,15 +12,15 @@
         margin-top: 80px * $i;
 
         .nbr_carte_tete{
-            @include carte-parametre(20px, start);
+            @include carte-parametre(math.div($dimension-carte-height, 6), start);
         }
         
         .symbole_carte_centre{    
-            @include carte-parametre(90px, center);
+            @include carte-parametre(math.div($dimension-carte-height, 2), center);
         }
         
         .nbr_carte_pied{
-            @include carte-parametre(20px, start);
+            @include carte-parametre(math.div($dimension-carte-height, 6), start);
             transform: rotate(180deg);
         }
     }
