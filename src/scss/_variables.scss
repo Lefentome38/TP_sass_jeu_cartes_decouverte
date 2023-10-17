@@ -6,5 +6,8 @@ $color-carte: #ffffff;
 $dimension-carte-width: 100px;
 $dimension-carte-height: 150px;
 
+$nombre-carte-sur-la-table: 7; //attention a la rotation des cartes, il faut trouver une solution de type calcule | @if x < x {} @else {}
+$rotation-carte-1-de-depart: -40deg;
+
 @use "sass:math";
 $nunber: random($limit: 360)

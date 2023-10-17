@@ -8,8 +8,9 @@
 }
 
 @mixin dimension-carte() {
-  margin: 50px;
+  // margin: 50px;
   border: solid;
+  position: absolute;
   width: $dimension-carte-width;
   height: $dimension-carte-height;
   background-color: $color-carte;

@@ -13,3 +13,14 @@ body {
   margin: auto;
   margin-top: 50px;
 }
+
+.main{
+  width: 600px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 100px;
+  // display: flex;
+  // justify-content: center; 
+  position: absolute;
+  border: solid red;
+}

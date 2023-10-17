@@ -3,13 +3,19 @@
 @use "sass:math";
 
 
-@for $i from 1 through 6 {
+@for $i from 1 through $nombre-carte-sur-la-table {
     .carte#{$i} {
 
         @include dimension-carte();
         
-        position: absolute;
-        margin-top: 80px * $i;
+        margin-top: 20px;
+        margin-left: 70px * $i;
+        transform: rotate($rotation-carte-1-de-depart - ($i * -10));
+        @if $i < math.div($nombre-carte-sur-la-table, 2) {
+            top: ($nombre-carte-sur-la-table - $i) * 24px;        
+        } @else {
+            top: $i * 20px;        
+        }
 
         .nbr_carte_tete{
             @include carte-parametre(math.div($dimension-carte-height, 6), start);
