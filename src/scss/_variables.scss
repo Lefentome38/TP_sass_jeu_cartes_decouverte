@@ -3,14 +3,5 @@ $color-base-reduit: lighten($color-base,10%);
 
 $color-carte: #ffffff;
 
-$nbr_carte_tete--font-size: 20px;
-$nbr_carte_tete--text-align: start;
-
-$symbole_carte_centre--font-size: 90px;
-$symbole_carte_centre--text-align: center;
-
-$nbr_carte_pied--font-size: 20px;
-$nbr_carte_pied--text-align: end;
-
 @use "sass:math";
 $nunber: random($limit: 360)

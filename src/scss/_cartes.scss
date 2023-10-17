@@ -3,24 +3,25 @@
 
 
 
-@for $i from 1 through 3 {
-    .item-#{$i} {
-      width: 100px * $i;
+@for $i from 1 through 6 {
+    .carte#{$i} {
+
+        @include dimension-carte();
+        
+        position: absolute;
+        margin-top: 80px * $i;
+
+        .nbr_carte_tete{
+            @include carte-parametre(20px, start);
+        }
+        
+        .symbole_carte_centre{    
+            @include carte-parametre(90px, center);
+        }
+        
+        .nbr_carte_pied{
+            @include carte-parametre(20px, start);
+            transform: rotate(180deg);
+        }
     }
   }
-
-.carte_1, .carte_2, .carte_3, .carte_4, .carte_5, .carte_6{
-    @include dimension-carte();
-
-    .nbr_carte_tete{
-        @include carte-parametre-tete();
-    }
-    
-    .symbole_carte_centre{    
-        @include carte-parametre-centre();
-    }
-    
-    .nbr_carte_pied{
-        @include carte-parametre-pied();
-    }
-}
